@@ -1,0 +1,109 @@
+# Projection model parameters. Tune these with `python -m ucl.backtest`.
+half_life_days: 21          # weight halves every N days (calendar, not matchdays)
+lookback_days: 150
+cup_availability_weight: 0.3   # domestic cups are rotation-heavy: count less for start probability
+ucl_weight: 1.5                # UCL matches count a bit more than domestic ones
+shrink_90s: 6                  # prior strength (in 90-minute units) toward the price-based prior
+price_prior_exponent: 2.0      # prior goals/assists ~ (price / position avg price) ^ this
+home_advantage: 1.12
+
+# Converts domestic output to "UCL-equivalent". 1.0 = Premier League level.
+# Scored goals are multiplied by the factor; conceded goals are divided by it.
+league_factor:
+  English Premier League: 1.00
+  Spanish Liga: 0.96
+  Italian Serie A: 0.93
+  German Bundesliga: 0.93
+  French Ligue 1: 0.88
+  Portuguese First Division: 0.78
+  Dutch First Division: 0.76
+  Belgian First League: 0.70
+  Turkish Super League: 0.70
+  Czech First League: 0.66
+  Austrian Bundesliga: 0.66
+  Greek Super League: 0.66
+  Scottish Premiership: 0.64
+  Ukrainian Premier League: 0.62
+  Norwegian Premier Division: 0.60
+  Slovak First League: 0.55
+  Azerbaijani Premier League: 0.52
+  default: 0.65               # unknown leagues
+cup_keywords: [Cup, Pokal, Copa, Coupe, Coppa, Trophy, Taça, Beker]
+
+# --- xG (UEFA shot data for UCL, football-data.co.uk team xG for domestic leagues)
+goal_weight: 0.4            # player rates: weight on real goals/assists vs the xG estimate (1.0 = ignore xG)
+share_pseudo_goals: 4       # shrinkage for a player's share of his team's goals
+team_goals_per90: 1.6       # used to turn the price prior into a share of team goals
+team_model: xg              # "xg" (league fits on team xG) or "goals" (old UCL-club-only model)
+xg_weight_team: 0.7         # team ratings: weight on xG vs goals
+team_half_life_days: 90     # team strength changes slower than player form
+team_lookback_days: 365
+ucl_rating_pseudo_goals: 6  # how much UCL results move the domestic-based ratings (higher = less)
+
+# --- availability (start probability) calibration, chosen by backtest
+avail_pseudo: 0.5           # pseudo-matches pulling p(play) toward the prior (fixes over-confidence)
+avail_prior: 0.5
+avail_prior_60: 0.3
+avail_cap: 0.95             # nobody is a lock: knocks, rotation, late illness
+avail_cap_60: 0.9
+
+# --- coverage for clubs without domestic xG
+odds_weight_team: 0.5          # league fits: weight of odds-implied goals (xG 0.7 / goals 0.3 are the others)
+euro_rating_pseudo_goals: 6    # how much qualifiers / last season's European games move ratings (0 = off)
+euro_half_life_days: 180       # European games are rare: let last season still count
+country_factor_ref: 0.85       # strength of an average UCL participant's league, on the league_factor scale
+country_factor:                # opponent strength by country for European games vs non-UCL clubs
+  ENG: 1.00
+  ESP: 0.96
+  ITA: 0.93
+  GER: 0.93
+  FRA: 0.88
+  POR: 0.78
+  NED: 0.76
+  BEL: 0.70
+  TUR: 0.70
+  CZE: 0.66
+  AUT: 0.66
+  GRE: 0.66
+  SUI: 0.64
+  SCO: 0.64
+  DEN: 0.64
+  UKR: 0.62
+  CRO: 0.62
+  NOR: 0.60
+  SRB: 0.60
+  POL: 0.60
+  ISR: 0.58
+  CYP: 0.58
+  SWE: 0.58
+  HUN: 0.55
+  ROU: 0.55
+  SVK: 0.55
+  SVN: 0.52
+  AZE: 0.52
+  BUL: 0.50
+  BIH: 0.48
+  KAZ: 0.48
+  FIN: 0.46
+  MDA: 0.45
+  IRL: 0.45
+  GEO: 0.45
+  BLR: 0.45
+  ARM: 0.42
+  ALB: 0.42
+  MKD: 0.42
+  MNE: 0.42
+  KOS: 0.42
+  ISL: 0.42
+  LVA: 0.42
+  LTU: 0.40
+  EST: 0.40
+  WAL: 0.38
+  NIR: 0.38
+  FRO: 0.38
+  LUX: 0.38
+  MLT: 0.32
+  GIB: 0.30
+  AND: 0.30
+  SMR: 0.25
+  default: 0.50

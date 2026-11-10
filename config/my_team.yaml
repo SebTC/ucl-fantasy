@@ -1,0 +1,24 @@
+# Your UCL Fantasy squad. Captured from the official site on 2026-11-08 (MD5).
+# Update via the "My team" page in the app (manual picker or paste import).
+matchday: 5
+bank: 0.6
+free_transfers: 2
+chips_used: []          # wildcard, limitless, boosters
+captain: 250088061
+# id: bench position (0 = starting XI, 1..4 = bench order)
+squad:
+  250016833: 0
+  250076574: 0
+  250078507: 0
+  250176450: 0
+  250112880: 0
+  250153621: 0
+  250162177: 0
+  250088061: 0
+  250130006: 0
+  250141864: 0
+  250188223: 0
+  97746: 1
+  250122213: 2
+  250051338: 3
+  250176488: 4

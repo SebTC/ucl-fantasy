@@ -1,0 +1,219 @@
+{
+  "data": {
+    "value": [
+      {
+        "goals": 0,
+        "match": {
+          "score": {
+            "total": {
+              "away": 1,
+              "home": 3
+            },
+            "penalty": null
+          },
+          "awayTeam": {
+            "id": "52919",
+            "teamCode": "MCI",
+            "internationalName": "Manchester City FC"
+          },
+          "homeTeam": {
+            "id": "52681",
+            "teamCode": "NFO",
+            "internationalName": "Nottingham Forest FC"
+          },
+          "competition": {
+            "metaData": {
+              "name": "English Premier League"
+            }
+          },
+          "kickOffTime": {
+            "date": "2026-11-07",
+            "dateTime": "2026-11-07T18:30:00Z",
+            "utcOffsetInHours": 0
+          }
+        },
+        "teamId": "52919",
+        "assists": 0,
+        "playerId": "250103758",
+        "redCards": 0,
+        "cleanSheets": 0,
+        "yellowCards": 0,
+        "minutesPlayedOfficial": 90
+      },
+      {
+        "goals": 0,
+        "match": {
+          "score": {
+            "total": {
+              "away": 1,
+              "home": 0
+            },
+            "penalty": null
+          },
+          "awayTeam": {
+            "id": "2601105",
+            "teamCode": "BHA",
+            "internationalName": "Brighton & Hove Albion FC"
+          },
+          "homeTeam": {
+            "id": "52919",
+            "teamCode": "MCI",
+            "internationalName": "Manchester City FC"
+          },
+          "competition": {
+            "metaData": {
+              "name": "English Premier League"
+            }
+          },
+          "kickOffTime": {
+            "date": "2026-10-31",
+            "dateTime": "2026-10-31T16:00:00Z",
+            "utcOffsetInHours": 0
+          }
+        },
+        "teamId": "52919",
+        "assists": 0,
+        "playerId": "250103758",
+        "redCards": 0,
+        "cleanSheets": 0,
+        "yellowCards": 0,
+        "minutesPlayedOfficial": 90
+      },
+      {
+        "goals": 0,
+        "match": {
+          "score": {
+            "total": {
+              "away": 2,
+              "home": 2
+            },
+            "penalty": {
+              "away": 3,
+              "home": 4
+            }
+          },
+          "awayTeam": {
+            "id": "2601105",
+            "teamCode": "BHA",
+            "internationalName": "Brighton & Hove Albion FC"
+          },
+          "homeTeam": {
+            "id": "52919",
+            "teamCode": "MCI",
+            "internationalName": "Manchester City FC"
+          },
+          "competition": {
+            "metaData": {
+              "name": "English League Cup"
+            }
+          },
+          "kickOffTime": {
+            "date": "2026-10-28",
+            "dateTime": "2026-10-28T20:30:00Z",
+            "utcOffsetInHours": 0
+          }
+        },
+        "teamId": "52919",
+        "assists": 0,
+        "playerId": "250103758",
+        "redCards": 0,
+        "cleanSheets": 0,
+        "yellowCards": 0,
+        "minutesPlayedOfficial": 0
+      },
+      {
+        "goals": 1,
+        "match": {
+          "score": {
+            "total": {
+              "away": 1,
+              "home": 2
+            },
+            "penalty": null
+          },
+          "awayTeam": {
+            "id": "52919",
+            "teamCode": "MCI",
+            "internationalName": "Manchester City FC"
+          },
+          "homeTeam": {
+            "id": "52683",
+            "teamCode": "AVL",
+            "internationalName": "Aston Villa FC"
+          },
+          "competition": {
+            "metaData": {
+              "name": "English Premier League"
+            }
+          },
+          "kickOffTime": {
+            "date": "2026-10-24",
+            "dateTime": "2026-10-24T13:30:00Z",
+            "utcOffsetInHours": 0
+          }
+        },
+        "teamId": "52919",
+        "assists": 0,
+        "playerId": "250103758",
+        "redCards": 0,
+        "cleanSheets": 0,
+        "yellowCards": 0,
+        "minutesPlayedOfficial": 90
+      },
+      {
+        "goals": 2,
+        "match": {
+          "score": {
+            "total": {
+              "away": 2,
+              "home": 3
+            },
+            "penalty": null
+          },
+          "awayTeam": {
+            "id": "62301",
+            "teamCode": "IPS",
+            "internationalName": "Ipswich Town FC"
+          },
+          "homeTeam": {
+            "id": "52919",
+            "teamCode": "MCI",
+            "internationalName": "Manchester City FC"
+          },
+          "competition": {
+            "metaData": {
+              "name": "English Premier League"
+            }
+          },
+          "kickOffTime": {
+            "date": "2026-10-17",
+            "dateTime": "2026-10-17T16:00:00Z",
+            "utcOffsetInHours": 0
+          }
+        },
+        "teamId": "52919",
+        "assists": 0,
+        "playerId": "250103758",
+        "redCards": 0,
+        "cleanSheets": 0,
+        "yellowCards": 0,
+        "minutesPlayedOfficial": 90
+      }
+    ],
+    "feedTime": {
+      "utcTime": "11/8/2026 6:57:17 PM",
+      "istTime": "11/9/2026 12:27:17 AM",
+      "cestTime": "11/8/2026 7:57:17 PM"
+    }
+  },
+  "meta": {
+    "message": "cl_fant_domestic_player_gameday_get",
+    "retVal": 1,
+    "success": true,
+    "timestamp": {
+      "utcTime": "11/8/2026 6:57:15 PM",
+      "istTime": "11/9/2026 12:27:15 AM",
+      "cestTime": "11/8/2026 7:57:15 PM"
+    }
+  }
+}

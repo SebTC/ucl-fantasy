@@ -1,0 +1,54 @@
+# UCL club -> football-data.co.uk league file + team name (for domestic team xG).
+# Clubs not listed (e.g. Norway, Austria, Czechia, Slovakia, Ukraine, Azerbaijan)
+# fall back to goal-based ratings from UEFA's domestic-form feed.
+# key: UCL Fantasy club_id
+divisions:   # football-data file code -> competition name used in the UEFA domestic feed
+  E0: English Premier League
+  SP1: Spanish Liga
+  I1: Italian Serie A
+  D1: German Bundesliga
+  F1: French Ligue 1
+  P1: Portuguese First Division
+  N1: Dutch First Division
+  B1: Belgian First League
+  T1: Turkish Super League
+  G1: Greek Super League
+  SC0: Scottish Premiership
+clubs:
+  "52280": [E0, Arsenal]
+  "52683": [E0, Aston Villa]
+  "7889": [E0, Liverpool]
+  "52919": [E0, Man City]
+  "52682": [E0, Man United]
+  "50124": [SP1, Ath Madrid]
+  "50080": [SP1, Barcelona]
+  "52265": [SP1, Betis]
+  "50051": [SP1, Real Madrid]
+  "70691": [SP1, Villarreal]
+  "79946": [I1, Como]
+  "50138": [I1, Inter]
+  "50136": [I1, Napoli]
+  "50137": [I1, Roma]
+  "50037": [D1, Bayern Munich]
+  "52758": [D1, Dortmund]
+  "2603790": [D1, RB Leipzig]
+  "50107": [D1, Stuttgart]
+  "52277": [F1, Lens]
+  "75797": [F1, Lille]
+  "52747": [F1, Paris SG]
+  "50064": [P1, Porto]
+  "50149": [P1, Sp Lisbon]
+  "50062": [N1, PSV Eindhoven]
+  "52749": [N1, Feyenoord]
+  "50043": [B1, Club Brugge]
+  "52692": [T1, Fenerbahce]
+  "50067": [T1, Galatasaray]
+  "50129": [G1, AEK]
+# football-data.co.uk "new/" files: odds + results, no xG (fitted on odds-implied goals)
+extra_divisions:
+  NOR: Norwegian Premier Division
+  AUT: Austrian Bundesliga
+extra_clubs:
+  "59333": [NOR, Bodo/Glimt]
+  "52319": [NOR, Viking]
+  "63405": [AUT, LASK]

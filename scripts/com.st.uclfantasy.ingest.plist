@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- Replace /path/to/ucl-fantasy with the repo's absolute path before installing (see README). -->
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>com.st.uclfantasy.ingest</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/path/to/ucl-fantasy/.venv/bin/python</string>
+    <string>-m</string><string>ucl.ingest</string>
+  </array>
+  <key>WorkingDirectory</key><string>/path/to/ucl-fantasy</string>
+  <key>StartCalendarInterval</key>
+  <array>
+    <dict><key>Hour</key><integer>7</integer><key>Minute</key><integer>0</integer></dict>
+    <dict><key>Hour</key><integer>19</integer><key>Minute</key><integer>0</integer></dict>
+  </array>
+  <key>StandardOutPath</key><string>/path/to/ucl-fantasy/data/ingest.log</string>
+  <key>StandardErrorPath</key><string>/path/to/ucl-fantasy/data/ingest.log</string>
+</dict>
+</plist>
